@@ -1,0 +1,70 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.15.7)
+  - ReactiveObjC (3.0.0)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - SGPagingView (1.6.7)
+  - SVProgressHUD (2.2.5)
+  - UITextView-WZB (1.1.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - FMDB
+  - Masonry (~> 1.0.1)
+  - MBProgressHUD (~> 1.0.0)
+  - MJRefresh (~> 3.1.15.1)
+  - ReactiveObjC (~> 3.0.0)
+  - SDWebImage (~> 5.0.0)
+  - SGPagingView (~> 1.6.7)
+  - SVProgressHUD (~> 2.2.2)
+  - UITextView-WZB
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - FMDB
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - SGPagingView
+    - SVProgressHUD
+    - UITextView-WZB
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SGPagingView: 21152cbb9e25a7259ea2415b028c22f55f362ea2
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UITextView-WZB: aa7306ec35ad35d325f8e608366ecd5ac8c8eed9
+
+PODFILE CHECKSUM: 0529b4b404253cd449bc5dcb4e412356a6d6be38
+
+COCOAPODS: 1.9.1

@@ -8,16 +8,37 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak,nonatomic) UITableView *tableView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // 添加tableView
+    UITableView *tableView = [[UITableView alloc]init];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    tableView.frame = UIScreen.mainScreen.bounds;
+    [self.view addSubview:tableView];
+    self.tableView = tableView;
+    
+    
 }
 
+#pragma mark - UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.detailTextLabel.text = @"Mask View";
+    return cell;
+}
 @end
