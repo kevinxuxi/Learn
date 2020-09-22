@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0474CA0924B86E6200AC98CD /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474CA0824B86E6200AC98CD /* MaskViewController.m */; };
 		04D9767D24B8494B0023724F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9767C24B8494B0023724F /* AppDelegate.m */; };
-		04D9768024B8494B0023724F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9767F24B8494B0023724F /* SceneDelegate.m */; };
-		04D9768324B8494B0023724F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9768224B8494B0023724F /* ViewController.m */; };
-		04D9768624B8494B0023724F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D9768424B8494B0023724F /* Main.storyboard */; };
+		04D9768324B8494B0023724F /* RootVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9768224B8494B0023724F /* RootVc.m */; };
 		04D9768824B8494D0023724F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D9768724B8494D0023724F /* Assets.xcassets */; };
 		04D9768B24B8494E0023724F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D9768924B8494E0023724F /* LaunchScreen.storyboard */; };
 		04D9768E24B8494E0023724F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9768D24B8494E0023724F /* main.m */; };
 		C2AA1B141CF5F234AC6AAD70 /* Pods_Learn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5562DAF4EFE1306B3A979156 /* Pods_Learn.framework */; };
+		CDE20CBB251A4074009F6737 /* SingSound.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = CDE20CB8251A4074009F6737 /* SingSound.Bundle */; };
+		CDE20CBC251A4074009F6737 /* SingSound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE20CB9251A4074009F6737 /* SingSound.framework */; };
+		CDE20CBD251A4074009F6737 /* libssound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE20CBA251A4074009F6737 /* libssound.a */; };
+		CDE20CC3251A434D009F6737 /* SingSoundVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE20CC1251A434D009F6737 /* SingSoundVC.m */; };
+		CDE20CC4251A434D009F6737 /* SingSoundVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE20CC2251A434D009F6737 /* SingSoundVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,17 +27,20 @@
 		04D9767824B8494B0023724F /* Learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D9767B24B8494B0023724F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04D9767C24B8494B0023724F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04D9767E24B8494B0023724F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		04D9767F24B8494B0023724F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		04D9768124B8494B0023724F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04D9768224B8494B0023724F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		04D9768524B8494B0023724F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04D9768124B8494B0023724F /* RootVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootVc.h; sourceTree = "<group>"; };
+		04D9768224B8494B0023724F /* RootVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootVc.m; sourceTree = "<group>"; };
 		04D9768724B8494D0023724F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D9768A24B8494E0023724F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D9768C24B8494E0023724F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D9768D24B8494E0023724F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5562DAF4EFE1306B3A979156 /* Pods_Learn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D092C15DF0858FF6A9BDF7 /* Pods-Learn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn.release.xcconfig"; path = "Target Support Files/Pods-Learn/Pods-Learn.release.xcconfig"; sourceTree = "<group>"; };
+		CDE20CB8251A4074009F6737 /* SingSound.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SingSound.Bundle; sourceTree = "<group>"; };
+		CDE20CB9251A4074009F6737 /* SingSound.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SingSound.framework; sourceTree = "<group>"; };
+		CDE20CBA251A4074009F6737 /* libssound.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssound.a; sourceTree = "<group>"; };
+		CDE20CC0251A434D009F6737 /* SingSoundVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingSoundVC.h; sourceTree = "<group>"; };
+		CDE20CC1251A434D009F6737 /* SingSoundVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingSoundVC.m; sourceTree = "<group>"; };
+		CDE20CC2251A434D009F6737 /* SingSoundVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingSoundVC.xib; sourceTree = "<group>"; };
 		F942E0D54983FEE859D12D99 /* Pods-Learn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn.debug.xcconfig"; path = "Target Support Files/Pods-Learn/Pods-Learn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,7 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE20CBD251A4074009F6737 /* libssound.a in Frameworks */,
 				C2AA1B141CF5F234AC6AAD70 /* Pods_Learn.framework in Frameworks */,
+				CDE20CBC251A4074009F6737 /* SingSound.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,21 +88,40 @@
 		04D9767A24B8494B0023724F /* Learn */ = {
 			isa = PBXGroup;
 			children = (
+				CDE20CB3251A3A6B009F6737 /* Lib */,
 				04D9767B24B8494B0023724F /* AppDelegate.h */,
 				04D9767C24B8494B0023724F /* AppDelegate.m */,
-				04D9767E24B8494B0023724F /* SceneDelegate.h */,
-				04D9767F24B8494B0023724F /* SceneDelegate.m */,
-				04D9768124B8494B0023724F /* ViewController.h */,
-				04D9768224B8494B0023724F /* ViewController.m */,
+				04D9768124B8494B0023724F /* RootVc.h */,
+				04D9768224B8494B0023724F /* RootVc.m */,
 				0474CA0724B86E6200AC98CD /* MaskViewController.h */,
+				CDE20CC0251A434D009F6737 /* SingSoundVC.h */,
+				CDE20CC1251A434D009F6737 /* SingSoundVC.m */,
+				CDE20CC2251A434D009F6737 /* SingSoundVC.xib */,
 				0474CA0824B86E6200AC98CD /* MaskViewController.m */,
-				04D9768424B8494B0023724F /* Main.storyboard */,
 				04D9768724B8494D0023724F /* Assets.xcassets */,
 				04D9768924B8494E0023724F /* LaunchScreen.storyboard */,
 				04D9768C24B8494E0023724F /* Info.plist */,
 				04D9768D24B8494E0023724F /* main.m */,
 			);
 			path = Learn;
+			sourceTree = "<group>";
+		};
+		CDE20CB3251A3A6B009F6737 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				CDE20CB7251A4074009F6737 /* SingsoundSDK */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		CDE20CB7251A4074009F6737 /* SingsoundSDK */ = {
+			isa = PBXGroup;
+			children = (
+				CDE20CB8251A4074009F6737 /* SingSound.Bundle */,
+				CDE20CB9251A4074009F6737 /* SingSound.framework */,
+				CDE20CBA251A4074009F6737 /* libssound.a */,
+			);
+			path = SingsoundSDK;
 			sourceTree = "<group>";
 		};
 		E42402D24A0A2A99EFB328DC /* Frameworks */ = {
@@ -116,7 +143,6 @@
 				04D9767424B8494B0023724F /* Sources */,
 				04D9767524B8494B0023724F /* Frameworks */,
 				04D9767624B8494B0023724F /* Resources */,
-				892FDC71C739FC6CD45AAC37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,8 +191,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D9768B24B8494E0023724F /* LaunchScreen.storyboard in Resources */,
+				CDE20CBB251A4074009F6737 /* SingSound.Bundle in Resources */,
 				04D9768824B8494D0023724F /* Assets.xcassets in Resources */,
-				04D9768624B8494B0023724F /* Main.storyboard in Resources */,
+				CDE20CC4251A434D009F6737 /* SingSoundVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,23 +222,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		892FDC71C739FC6CD45AAC37 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Learn/Pods-Learn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Learn/Pods-Learn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Learn/Pods-Learn-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -219,25 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE20CC3251A434D009F6737 /* SingSoundVC.m in Sources */,
 				0474CA0924B86E6200AC98CD /* MaskViewController.m in Sources */,
-				04D9768324B8494B0023724F /* ViewController.m in Sources */,
+				04D9768324B8494B0023724F /* RootVc.m in Sources */,
 				04D9767D24B8494B0023724F /* AppDelegate.m in Sources */,
 				04D9768E24B8494E0023724F /* main.m in Sources */,
-				04D9768024B8494B0023724F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04D9768424B8494B0023724F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04D9768524B8494B0023724F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04D9768924B8494E0023724F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -365,11 +367,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQTW63ED2G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Learn/Lib/SingsoundSDK",
+				);
 				INFOPLIST_FILE = Learn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Learn/Lib/SingsoundSDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinxu.www.Learn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,11 +394,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQTW63ED2G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Learn/Lib/SingsoundSDK",
+				);
 				INFOPLIST_FILE = Learn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Learn/Lib/SingsoundSDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinxu.www.Learn;
 				PRODUCT_NAME = "$(TARGET_NAME)";

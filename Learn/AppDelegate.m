@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "RootVc.h"
+#import <SingSound/SSOralEvaluatingManager.h>
 
 @interface AppDelegate ()
 
@@ -16,26 +18,56 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self initWindow];
+    [self registerVad];
+    [self setUpNav];
     return YES;
 }
 
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+- (void)initWindow
+{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    RootVc *rootVc = [[RootVc alloc]init];
+    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:rootVc];
+    self.window.rootViewController = rootNav;
+    [self.window makeKeyAndVisible];
+    
+}
+- (void)registerVad
+{
+    SSOralEvaluatingManagerConfig *config = [[SSOralEvaluatingManagerConfig alloc] init];
+    config.appKey = @"a135";
+    config.secretKey = @"5ceb63b8a5124854a92d046dca1e54a3";
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"SSerror"];
+    config.logPath = path;
+    config.isOutputLog = NO;
+    config.vad = YES;
+    config.allowDynamicService = YES;
+    config.portNumber = @"8080";
+    config.protocolHeader = @"ws";
+    config.vad = YES;
+    config.frontTime = 3;
+    config.backTime = 0.5;
+    [SSOralEvaluatingManager registerEvaluatingManagerConfig:config];
+    [[SSOralEvaluatingManager shareManager] registerEvaluatingType:OralEvaluatingTypeLine];
 }
 
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+- (void)setUpNav
+{
+    
+    UINavigationBar *bar = [UINavigationBar appearance];
+    // 导航栏背景色
+    [bar setBarTintColor:[UIColor whiteColor]];
+    // 导航栏标题色
+    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]}];
+    // 返回按钮颜色
+    [bar setTintColor:[UIColor darkGrayColor]];
+    
+    // 返回按钮
+    UIBarButtonItem *backItem = [UIBarButtonItem appearance];
+    [backItem setBackButtonTitlePositionAdjustment:UIOffsetMake(-500, 0) forBarMetrics:UIBarMetricsDefault];
+    
 }
-
-
 @end
